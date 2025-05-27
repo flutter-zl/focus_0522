@@ -86,33 +86,6 @@ class _FirstPageState extends State<FirstPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Debug info card
-            Card(
-              color: Colors.yellow.shade100,
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Debug Focus Test',
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(height: 8),
-                    Text('Test Counter: $_testCounter'),
-                    Text('Check browser console for debug output'),
-                    SizedBox(height: 8),
-                    ElevatedButton(
-                      onPressed: _triggerFocusEvent,
-                      child: Text('Trigger Focus Event Test'),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
             SizedBox(height: 20),
 
             // Random Card Widget
